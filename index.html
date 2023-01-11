@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Simple language translator</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mt-3">
+                <div class="form-group">
+                    <label for="input-text">Input text:</label>
+                    <textarea id="input-text" class="form-control"></textarea>
+                    <label for="input-language">Select language:</label>
+                    <select id="input-language" class="form-control">
+                        <option value="auto" selected>Auto Detect</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="ar">Arabic</option>
+                        <option value="az">Azerbaijani</option>
+                        <option value="ca">Catalan</option>
+                        <option value="zh">Chinese</option>
+                        <option value="cs">Czech</option>
+                        <option value="da">Danish</option>
+                        <option value="nl">Dutch</option>
+                        <option value="eo">Esperanto</option>
+                        <option value="fi">Finnish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="el">Greek</option>
+                        <option value="he">Hebrew</option>
+                        <option value="hi">Hindi</option>
+                        <option value="hu">Hungarian</option>
+                        <option value="id">Indonesian</option>
+                        <option value="ga">Irish</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="fa">Persian</option>
+                        <option value="pl">Polish</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="sk">Slovak</option>
+                        <option value="sv">Swedish</option>
+                        <option value="tr">Turkish</option>
+                        <option value="uk">Ukranian</option>
+                    </select>
+                </div>
+                <button id="translate-button" class="btn btn-primary">Translate</button>
+            </div>
+            <div class="col-sm-6 mt-3">
+                <div class="form-group">
+                    <label for="output-text">Translation:</label>
+                    <textarea id="output-text" class="form-control" readonly></textarea>
+                    <label for="output-language">Select language:</label>
+                    <select id="output-language" class="form-control">
+                        <option value="en">English</option>
+                        <option value="es" selected>Spanish</option>
+                        <option value="ar">Arabic</option>
+                        <option value="az">Azerbaijani</option>
+                        <option value="ca">Catalan</option>
+                        <option value="zh">Chinese</option>
+                        <option value="cs">Czech</option>
+                        <option value="da">Danish</option>
+                        <option value="nl">Dutch</option>
+                        <option value="eo">Esperanto</option>
+                        <option value="fi">Finnish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="el">Greek</option>
+                        <option value="he">Hebrew</option>
+                        <option value="hi">Hindi</option>
+                        <option value="hu">Hungarian</option>
+                        <option value="id">Indonesian</option>
+                        <option value="ga">Irish</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="fa">Persian</option>
+                        <option value="pl">Polish</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="sk">Slovak</option>
+                        <option value="sv">Swedish</option>
+                        <option value="tr">Turkish</option>
+                        <option value="uk">Ukranian</option>
+                    </select>
+                </div>
+                <button id="copy-button" class="btn btn-success" onclick="copyText()">Copy</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/api.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>

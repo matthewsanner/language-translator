@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to bottom, white, lightblue);
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+button {
+    margin-top: 20px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+#copy-button {
+    margin-bottom: 20px;
+}
