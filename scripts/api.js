@@ -8,7 +8,7 @@ async function detectLanguage(input) {
         api_key: ""
     });
 
-    const response = await fetch("https://libretranslate.de/detect", {
+    const response = await fetch("https://translate.argosopentech.com/detect", {
         method: "POST",
         headers: headers,
         body: body
@@ -31,7 +31,7 @@ async function translateText(input, inputLang, outputLang) {
         api_key: ""
     });
 
-    const response = await fetch("https://libretranslate.de/translate", {
+    const response = await fetch("https://translate.argosopentech.com/translate", {
         method: "POST",
         headers: headers,
         body: body
